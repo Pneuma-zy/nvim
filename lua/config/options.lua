@@ -12,6 +12,7 @@ vim.g.neovide_hide_mouse_when_typing = true
 -- 启用 C 风格缩进
 vim.opt.cindent = true
 
+
 -- 设置 cinoptions，大括号单独成行 (Allman style)
 vim.opt.cinoptions = "{s"
 local opt = vim.opt
