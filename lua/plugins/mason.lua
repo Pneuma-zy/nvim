@@ -1,6 +1,5 @@
 return {
   "mason_org/mason.nvim",
-  version = "1.24.0" ,
   keys = {
     { "<leader>cm", false },
   },
