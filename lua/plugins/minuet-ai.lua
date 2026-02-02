@@ -4,7 +4,7 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("minuet").setup({
-        throttle = 1000,
+        throttle = 800,
         debounce = 200,
 
         provider = "openai_fim_compatible",
