@@ -18,6 +18,7 @@ return {
       -- Ensure mason installs the server
       clangd = {
         keys = {},
+        cmd = { "clangd" },
       },
     },
   },

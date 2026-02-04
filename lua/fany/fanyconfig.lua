@@ -30,25 +30,4 @@ if not vim.g.vscode then
   })
 end
 
--- 添加 clangd 配置解决头文件问题
-require("lspconfig").clangd.setup({
-  capabilities = capabilities,
-  cmd = { "C:/msys64/mingw64/bin/clangd.exe",
-    "--query-driver=C:/msys64/mingw64/bin/g++.exe",
-    "--background-index",
-    "--clang-tidy" ,
-    "--header-insertion=never"},
-  filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
-  --init_options = {
-  --  clangdFileStatus = true,
-  --  替换为您的实际 MinGW 路径（示例路径，请根据实际修改）
-    -- fallbackFlags = {
-    --   "-IC:/msys64/mingw64/include/c++/15.1.0",
-    --   "-IC:/msys64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32",
-    --   "-IC:/msys64/mingw64/include"
-    -- }
-  --},
-  capabilities = {
-    offsetEncoding = "utf-8",  -- 解决 Windows 上的编码问题
-  }
-})
+-- clangd 配置交给 LazyVim / nvim-lspconfig 统一管理
