@@ -1,12 +1,12 @@
 return {
-  -- 锁定 mason.nvim 版本
+  -- Do not pin mason versions: LazyVim's current LSP flow depends on newer
+  -- mason-lspconfig behavior for automatic server enabling.
   {
     "mason-org/mason.nvim",
-    version = "1.11.0",
+    version = false,
   },
-  -- 锁定 mason-lspconfig 版本
   {
     "mason-org/mason-lspconfig.nvim",
-    version = "1.32.0",
+    version = false,
   },
 }

@@ -1,0 +1,4 @@
+WRN 2026-02-10T09:38:05.402 ?.13072    server_start:199: Failed to start server: operation not permitted: /var/folders/wt/g_t23llx2h98jzw5k8nw729r0000gn/T/nvim.luzimo/Asabtt/nvim.13072.0
+WRN 2026-02-10T09:40:36.522 ?.13236    server_start:199: Failed to start server: operation not permitted: /var/folders/wt/g_t23llx2h98jzw5k8nw729r0000gn/T/nvim.luzimo/xqKkkd/nvim.13236.0
+WRN 2026-02-10T09:45:08.500 ?.13906    server_start:199: Failed to start server: operation not permitted: /var/folders/wt/g_t23llx2h98jzw5k8nw729r0000gn/T/nvim.luzimo/iIEitn/nvim.13906.0
+WRN 2026-02-10T09:50:07.603 ?.15623    server_start:199: Failed to start server: operation not permitted: /var/folders/wt/g_t23llx2h98jzw5k8nw729r0000gn/T/nvim.luzimo/UMM3bm/nvim.15623.0
