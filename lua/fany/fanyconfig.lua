@@ -18,6 +18,11 @@ vim.api.nvim_command("set indentkeys-=<:>")
 
 vim.g.neovide_fullscreen = true
 vim.o.termguicolors = true  -- init.lua
+
+-- Prefer the Git repo root for LazyVim project detection, then fall back to
+-- the active LSP root and finally the current working directory.
+vim.g.root_spec = { { ".git" }, "lsp", "cwd" }
+
 -- I dont know why write powershell_es config here will be effective for codeFormatting, but in lspconfig it will not work
 if not vim.g.vscode then
   require("lspconfig").powershell_es.setup({

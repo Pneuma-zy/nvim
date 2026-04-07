@@ -35,3 +35,5 @@ if not vim.g.vscode then
   require("fany.fanyneotree")
   require("fany.fanytoggleterm")
 end
+vim.opt.list = false
+vim.opt.fileformat = "unix"
