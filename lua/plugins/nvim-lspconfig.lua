@@ -15,6 +15,9 @@ return {
           { "<leader>cS", false },
         },
       },
+      -- rustaceanvim owns Rust LSP startup. Disable nvim-lspconfig's
+      -- rust-analyzer path so it does not start a second broken client.
+      rust_analyzer = { enabled = false },
       -- Ensure mason installs the server
       clangd = {
         keys = {},

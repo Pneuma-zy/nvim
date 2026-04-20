@@ -7,9 +7,9 @@ local function codelldb_command()
 end
 
 local function rust_analyzer_command()
-  local cargo_path = vim.fn.expand("~/.cargo/bin/rust-analyzer")
-  if vim.fn.executable(cargo_path) == 1 then
-    return cargo_path
+  local stable_path = vim.fn.expand("~/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer")
+  if vim.fn.executable(stable_path) == 1 then
+    return stable_path
   end
 
   local mason_path = vim.fn.stdpath("data") .. "/mason/bin/rust-analyzer"
@@ -32,11 +32,16 @@ return {
           default_settings = {
             ["rust-analyzer"] = {
               cargo = {
-                allFeatures = true,
+                allFeatures = false,
+                noDefaultFeatures = true,
+                features = { "board_rvqemu", "block_virt", "oom_handler" },
               },
               checkOnSave = true,
               check = {
-                command = "clippy",
+                command = "check",
+                allTargets = false,
+                noDefaultFeatures = true,
+                features = { "board_rvqemu", "block_virt", "oom_handler" },
               },
             },
           },

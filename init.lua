@@ -25,6 +25,9 @@ require("config.lazy")
 vim.opt.number = true           -- 显示绝对行号
 vim.opt.relativenumber = true   -- 显示相对行号
 
+-- 默认启用项目目录中的配置文件
+vim.o.exrc = true
+
 require("fany.fanykeymaps")
 require("fany.fanyconfig")
 if not vim.g.vscode then
